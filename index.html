@@ -1,14 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Francisco Romano</title>
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <h1>Francisco Romano</h1>
-  <p>Próximamente.</p>
+
+  <!-- Header -->
+  <div class="em-wrapper em-header">
+    <header>
+      <div class="em-container em-header-container">
+        <div class="em-header-left">
+          <svg class="em-logo" width="88" height="24" viewBox="0 0 88 24" aria-label="Francisco Romano">
+            <path d="M17.0658 7.85173C16.936 7.72176 16.936 7.51122 17.0658 7.38124L22.5769 1.86215C22.7067 1.73218 22.7067 1.52165 22.577 1.39167L21.285 0.0976944C21.1549 -0.0325602 20.9438 -0.0325654 20.8138 0.0976824L15.3039 5.61552C15.1738 5.74576 14.9628 5.74576 14.8327 5.61552L11.901 2.67967C8.91212 -0.313217 4.76439 -0.046909 2.04189 2.67966C-0.680631 5.40625 -0.680627 9.82691 2.04189 12.5535C4.7644 15.2801 8.9121 15.5464 11.901 12.5535L14.8328 9.61749C14.9628 9.48725 15.1739 9.48725 15.3039 9.61749L21.58 15.9023C21.71 16.0326 21.9211 16.0326 22.0512 15.9023L33.1169 4.8176C34.9245 3.00774 37.1569 3.27408 38.6981 4.8176C40.2393 6.36111 40.2393 8.86365 38.6981 10.4072L35.3949 13.7163C35.2651 13.8463 35.2651 14.0568 35.3949 14.1868L36.6871 15.4807C36.8171 15.6109 37.0282 15.6109 37.1582 15.4807L50.6555 1.96319C50.7858 1.83274 50.7858 1.62146 50.6555 1.49102L49.3652 0.198767C49.2347 0.0680482 49.0229 0.0680482 48.8923 0.198767L42.7774 6.32281C42.5816 6.5189 42.2393 6.40448 42.1762 6.13466C41.9118 5.00514 41.34 3.93313 40.4606 3.05247C37.946 0.534104 34.1354 0.267757 31.3544 3.05247L22.0509 12.3719C21.9209 12.5022 21.7098 12.5022 21.5797 12.372L17.0658 7.85173ZM13.0709 7.38127C13.2007 7.51125 13.2007 7.72179 13.0709 7.85177L10.1385 10.7883C8.12306 12.8064 5.5535 12.5401 3.80438 10.7884C2.05526 9.03663 2.05526 6.19652 3.80438 4.44479C5.5535 2.69306 8.12303 2.42672 10.1385 4.44479L13.0709 7.38127Z"/>
+          </svg>
+        </div>
+        <nav class="em-main-menu">
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button class="em-switch" id="theme-switch" aria-label="Toggle theme"></button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero / Intro -->
+  <div class="em-wrapper em-intro">
+    <div class="em-container em-intro-container">
+      <div class="em-section">
+        <span class="em-intro-eyebrow">Francisco Romano</span>
+        <h1>Designer &<br>Builder</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work -->
+  <div class="em-wrapper em-main" id="work">
+    <div class="em-container">
+
+      <p class="em-section-title">Professional</p>
+      <div class="em-project-row">
+        <div class="em-project-row-left">
+          <span class="em-project-number">001</span>
+          <span class="em-project-title">Project Title</span>
+          <span class="em-project-cat">Company</span>
+        </div>
+        <span class="em-project-year">2024</span>
+      </div>
+      <div class="em-project-row">
+        <div class="em-project-row-left">
+          <span class="em-project-number">002</span>
+          <span class="em-project-title">Project Title</span>
+          <span class="em-project-cat">Company</span>
+        </div>
+        <span class="em-project-year">2023</span>
+      </div>
+
+      <p class="em-section-title" style="margin-top: var(--space-xl)">Personal</p>
+      <div class="em-project-row">
+        <div class="em-project-row-left">
+          <span class="em-project-number">001</span>
+          <span class="em-project-title">Project Title</span>
+          <span class="em-project-cat">Personal</span>
+        </div>
+        <span class="em-project-year">2024</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="em-wrapper em-footer">
+    <footer>
+      <div class="em-container em-footer-container">
+        <div class="em-footer-left">Francisco Romano</div>
+        <div class="em-footer-right">© 2026</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

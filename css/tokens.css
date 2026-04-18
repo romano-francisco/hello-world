@@ -1,0 +1,200 @@
+/* ============================================================
+   Francisco Romano — Design Tokens
+   Source: Existencia Matters Design System
+   9-step ramps across {light,dark} × {neutral,accent}.
+     strong  = AAA on small text
+     regular = AA small / AAA large
+     light   = AA on large text only
+   ============================================================ */
+
+@font-face {
+  font-family: 'Neue Haas Grotesk TX Pro';
+  src: url('../fonts/NHaasGroteskTXPro-55Rg.ttf') format('truetype');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk TX Pro';
+  src: url('../fonts/NHaasGroteskTXPro-65Md.ttf') format('truetype');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Neue Haas Grotesk TX Pro';
+  src: url('../fonts/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+:root {
+
+  /* LIGHT MODE — blue (hue 200°) */
+  --lm-blue-neutral-strongest: hsla(200, 50%,  5%, 1);
+  --lm-blue-neutral-stronger:  hsla(200, 33%, 19%, 1);
+  --lm-blue-neutral-strong:    hsla(200, 23%, 31%, 1);
+  --lm-blue-neutral-regular:   hsla(200, 20%, 42%, 1);
+  --lm-blue-neutral-light:     hsla(200, 21%, 53%, 1);
+  --lm-blue-neutral-lighter:   hsla(200, 24%, 66%, 1);
+  --lm-blue-neutral-pale:      hsla(200, 33%, 82%, 1);
+  --lm-blue-neutral-dim:       hsla(200, 42%, 90%, 1);
+  --lm-blue-neutral-backstay:  hsla(200, 52%, 95%, 1);
+
+  --lm-blue-accent-strongest:  hsla(200, 68%,  8%, 1);
+  --lm-blue-accent-stronger:   hsla(200, 64%, 17%, 1);
+  --lm-blue-accent-strong:     hsla(200, 65%, 28%, 1);
+  --lm-blue-accent-regular:    hsla(200, 65%, 38%, 1);
+  --lm-blue-accent-light:      hsla(200, 64%, 48%, 1);
+  --lm-blue-accent-lighter:    hsla(200, 66%, 62%, 1);
+  --lm-blue-accent-pale:       hsla(200, 72%, 80%, 1);
+  --lm-blue-accent-dim:        hsla(200, 76%, 90%, 1);
+  --lm-blue-accent-backstay:   hsla(200, 80%, 96%, 1);
+
+  /* DARK MODE — emerald (hue 180°) */
+  --dm-emerald-neutral-strongest: hsla(180, 50%, 95%, 1);
+  --dm-emerald-neutral-stronger:  hsla(180, 29%, 77%, 1);
+  --dm-emerald-neutral-strong:    hsla(180, 21%, 56%, 1);
+  --dm-emerald-neutral-regular:   hsla(180, 20%, 43%, 1);
+  --dm-emerald-neutral-light:     hsla(180, 22%, 33%, 1);
+  --dm-emerald-neutral-lighter:   hsla(180, 30%, 22%, 1);
+  --dm-emerald-neutral-pale:      hsla(180, 39%, 13%, 1);
+  --dm-emerald-neutral-dim:       hsla(180, 49%,  9%, 1);
+  --dm-emerald-neutral-backstay:  hsla(200, 52%,  5%, 1);
+
+  --dm-emerald-accent-strongest:  hsla(180, 62%, 78%, 1);
+  --dm-emerald-accent-stronger:   hsla(180, 62%, 64%, 1);
+  --dm-emerald-accent-strong:     hsla(180, 65%, 52%, 1);
+  --dm-emerald-accent-regular:    hsla(180, 66%, 42%, 1);
+  --dm-emerald-accent-light:      hsla(180, 65%, 33%, 1);
+  --dm-emerald-accent-lighter:    hsla(180, 65%, 24%, 1);
+  --dm-emerald-accent-pale:       hsla(180, 60%, 15%, 1);
+  --dm-emerald-accent-dim:        hsla(180, 55%,  9%, 1);
+  --dm-emerald-accent-backstay:   hsla(200, 60%,  5%, 1);
+
+  /* Theme aliases */
+  --dm-neutral-strongest: var(--dm-emerald-neutral-strongest);
+  --dm-neutral-stronger:  var(--dm-emerald-neutral-stronger);
+  --dm-neutral-strong:    var(--dm-emerald-neutral-strong);
+  --dm-neutral-regular:   var(--dm-emerald-neutral-regular);
+  --dm-neutral-light:     var(--dm-emerald-neutral-light);
+  --dm-neutral-lighter:   var(--dm-emerald-neutral-lighter);
+  --dm-neutral-pale:      var(--dm-emerald-neutral-pale);
+  --dm-neutral-dim:       var(--dm-emerald-neutral-dim);
+  --dm-neutral-backstay:  var(--dm-emerald-neutral-backstay);
+
+  --dm-accent-strongest:  var(--dm-emerald-accent-strongest);
+  --dm-accent-stronger:   var(--dm-emerald-accent-stronger);
+  --dm-accent-strong:     var(--dm-emerald-accent-strong);
+  --dm-accent-regular:    var(--dm-emerald-accent-regular);
+  --dm-accent-light:      var(--dm-emerald-accent-light);
+  --dm-accent-lighter:    var(--dm-emerald-accent-lighter);
+  --dm-accent-pale:       var(--dm-emerald-accent-pale);
+  --dm-accent-dim:        var(--dm-emerald-accent-dim);
+  --dm-accent-backstay:   var(--dm-emerald-accent-backstay);
+
+  --lm-neutral-strongest: var(--lm-blue-neutral-strongest);
+  --lm-neutral-stronger:  var(--lm-blue-neutral-stronger);
+  --lm-neutral-strong:    var(--lm-blue-neutral-strong);
+  --lm-neutral-regular:   var(--lm-blue-neutral-regular);
+  --lm-neutral-light:     var(--lm-blue-neutral-light);
+  --lm-neutral-lighter:   var(--lm-blue-neutral-lighter);
+  --lm-neutral-pale:      var(--lm-blue-neutral-pale);
+  --lm-neutral-dim:       var(--lm-blue-neutral-dim);
+  --lm-neutral-backstay:  var(--lm-blue-neutral-backstay);
+
+  --lm-accent-strongest:  var(--lm-blue-accent-strongest);
+  --lm-accent-stronger:   var(--lm-blue-accent-stronger);
+  --lm-accent-strong:     var(--lm-blue-accent-strong);
+  --lm-accent-regular:    var(--lm-blue-accent-regular);
+  --lm-accent-light:      var(--lm-blue-accent-light);
+  --lm-accent-lighter:    var(--lm-blue-accent-lighter);
+  --lm-accent-pale:       var(--lm-blue-accent-pale);
+  --lm-accent-dim:        var(--lm-blue-accent-dim);
+  --lm-accent-backstay:   var(--lm-blue-accent-backstay);
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-s:  1rem;
+  --space-m:  1.5rem;
+  --space-l:  2.5rem;
+  --space-xl: 3.5rem;
+
+  /* Type scale */
+  --font-size-xxs: 0.625rem;  --line-height-xxs: 0.875rem;
+  --font-size-xs:  0.75rem;   --line-height-xs:  1rem;
+  --font-size-s:   0.875rem;  --line-height-s:   1.125rem;
+  --font-size-m:   1rem;      --line-height-m:   1.5rem;
+  --font-size-l:   1.25rem;   --line-height-l:   1.875rem;
+  --font-size-xl:  1.625rem;  --line-height-xl:  2.25rem;
+  --font-size-xxl: 2.125rem;  --line-height-xxl: 2.75rem;
+  --font-size-d1:  2.875rem;  --line-height-d1:  3.5rem;
+  --font-size-d2:  4rem;      --line-height-d2:  4.5rem;
+
+  --tracking-body:    0.08rem;
+  --tracking-display: 0.125rem;
+
+  --font-family-sans: 'Neue Haas Grotesk TX Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* Radii */
+  --radius-0:    0;
+  --radius-1:    1px;
+  --radius-pill: 9999px;
+
+  --ease-default:     cubic-bezier(.2, .0, .2, 1);
+  --duration-default: .3s;
+}
+
+/* Semantic tokens — default: dark mode */
+:root,
+body.dark-mode {
+  --bg:            var(--dm-neutral-backstay);
+  --bg-elevated:   var(--dm-neutral-dim);
+  --surface:       var(--dm-neutral-pale);
+  --surface-hover: var(--dm-neutral-lighter);
+
+  --fg:            var(--dm-neutral-strongest);
+  --fg-strong:     var(--dm-neutral-strong);
+  --fg-muted:      var(--dm-neutral-regular);
+  --fg-subtle:     var(--dm-neutral-light);
+  --fg-faint:      var(--dm-neutral-lighter);
+
+  --accent:        var(--dm-accent-regular);
+  --accent-hover:  var(--dm-accent-strong);
+  --accent-press:  var(--dm-accent-stronger);
+  --accent-faint:  var(--dm-accent-light);
+
+  --border:        var(--dm-neutral-light);
+  --border-hover:  var(--dm-neutral-regular);
+  --border-strong: var(--dm-neutral-stronger);
+  --divider:       var(--dm-neutral-pale);
+
+  --link:          var(--dm-accent-regular);
+  --link-hover:    var(--dm-accent-strong);
+
+  --on-accent:     var(--dm-neutral-backstay);
+}
+
+body.light-mode {
+  --bg:            var(--lm-neutral-backstay);
+  --bg-elevated:   var(--lm-neutral-dim);
+  --surface:       var(--lm-neutral-pale);
+  --surface-hover: var(--lm-neutral-lighter);
+
+  --fg:            var(--lm-neutral-strongest);
+  --fg-strong:     var(--lm-neutral-strong);
+  --fg-muted:      var(--lm-neutral-regular);
+  --fg-subtle:     var(--lm-neutral-light);
+  --fg-faint:      var(--lm-neutral-lighter);
+
+  --accent:        var(--lm-accent-regular);
+  --accent-hover:  var(--lm-accent-strong);
+  --accent-press:  var(--lm-accent-stronger);
+  --accent-faint:  var(--lm-accent-light);
+
+  --border:        var(--lm-neutral-light);
+  --border-hover:  var(--lm-neutral-regular);
+  --border-strong: var(--lm-neutral-stronger);
+  --divider:       var(--lm-neutral-pale);
+
+  --link:          var(--lm-accent-regular);
+  --link-hover:    var(--lm-accent-strong);
+
+  --on-accent:     var(--lm-neutral-backstay);
+}
