@@ -1,10 +1,8 @@
 /* ============================================================
    Francisco Romano — Design Tokens
-   Source: Existencia Matters Design System
-   9-step ramps across {light,dark} × {neutral,accent}.
-     strong  = AAA on small text
-     regular = AA small / AAA large
-     light   = AA on large text only
+   Source: EMDS 2026 (Figma: MpOu6WVIFMtSDEzsMQGZFX)
+   Sync: npm run sync-tokens
+   Last synced: never
    ============================================================ */
 
 @font-face {

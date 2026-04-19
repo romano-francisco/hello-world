@@ -1,0 +1,7 @@
+{
+  "name": "hello-world",
+  "type": "module",
+  "scripts": {
+    "sync-tokens": "node scripts/sync-tokens.js"
+  }
+}
