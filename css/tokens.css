@@ -115,6 +115,9 @@
   --space-l:  2.5rem;
   --space-xl: 3.5rem;
 
+  /* Component tokens */
+  --btn-min-height: 2.75rem; /* 44px — WCAG 2.5.5 touch target */
+
   /* Type scale */
   --font-size-xxs: 0.625rem;  --line-height-xxs: 0.875rem;
   --font-size-xs:  0.75rem;   --line-height-xs:  1rem;
@@ -134,7 +137,7 @@
 
   /* Radii */
   --radius-0:    0;
-  --radius-1:    1px;
+  --radius-1:    2px;
   --radius-pill: 9999px;
 
   --ease-default:     cubic-bezier(.2, .0, .2, 1);
@@ -146,6 +149,7 @@
 body.dark-mode {
   --bg:            var(--dm-neutral-backstay);
   --bg-elevated:   var(--dm-neutral-dim);
+  --bg-glass:      hsla(200, 52%,  5%, 0.75);
   --surface:       var(--dm-neutral-pale);
   --surface-hover: var(--dm-neutral-lighter);
 
@@ -169,11 +173,17 @@ body.dark-mode {
   --link-hover:    var(--dm-accent-strong);
 
   --on-accent:     var(--dm-neutral-backstay);
+
+  /* Hero blobs — dark mode emerald */
+  --hero-blob-1: hsla(180, 66%, 42%, 0.28);
+  --hero-blob-2: hsla(180, 65%, 33%, 0.22);
+  --hero-blob-3: hsla(180, 65%, 55%, 0.14);
 }
 
 body.light-mode {
   --bg:            var(--lm-neutral-backstay);
   --bg-elevated:   var(--lm-neutral-dim);
+  --bg-glass:      hsla(200, 52%, 95%, 0.75);
   --surface:       var(--lm-neutral-pale);
   --surface-hover: var(--lm-neutral-lighter);
 
@@ -197,4 +207,9 @@ body.light-mode {
   --link-hover:    var(--lm-accent-strong);
 
   --on-accent:     var(--lm-neutral-backstay);
+
+  /* Hero blobs — light mode blue */
+  --hero-blob-1: hsla(200, 64%, 48%, 0.18);
+  --hero-blob-2: hsla(200, 65%, 38%, 0.14);
+  --hero-blob-3: hsla(200, 66%, 62%, 0.12);
 }
