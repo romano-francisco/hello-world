@@ -211,3 +211,37 @@ body.light-mode {
   --hero-blob-2: hsla(200, 65%, 38%, 0.14);
   --hero-blob-3: hsla(200, 66%, 62%, 0.12);
 }
+
+body.red-mode {
+  --bg:            hsla(0,   38%, 98%, 1);
+  --bg-elevated:   hsla(353, 37%, 95%, 1);
+  --bg-glass:      hsla(0,   38%, 98%, 0.75);
+  --surface:       hsla(349, 17%, 82%, 1);
+  --surface-hover: hsla(353, 10%, 70%, 1);
+
+  --fg:            hsla(352, 52%,  5%, 1);
+  --fg-strong:     hsla(351,  7%, 34%, 1);
+  --fg-muted:      hsla(350,  5%, 46%, 1);
+  --fg-subtle:     hsla(346,  6%, 58%, 1);
+  --fg-faint:      hsla(353, 10%, 70%, 1);
+
+  --accent:        hsla(350, 88%, 47%, 1);
+  --accent-hover:  hsla(350, 85%, 36%, 1);
+  --accent-press:  hsla(350, 78%, 23%, 1);
+  --accent-faint:  hsla(350, 80%, 65%, 1);
+
+  --border:        hsla(346,  6%, 58%, 1);
+  --border-hover:  hsla(350,  5%, 46%, 1);
+  --border-strong: hsla(352, 15%, 19%, 1);
+  --divider:       hsla(349, 17%, 82%, 1);
+
+  --link:          hsla(350, 88%, 47%, 1);
+  --link-hover:    hsla(350, 85%, 36%, 1);
+
+  --on-accent:     hsla(0,   38%, 98%, 1);
+
+  /* Hero blobs — light mode red */
+  --hero-blob-1: hsla(350, 88%, 47%, 0.18);
+  --hero-blob-2: hsla(350, 85%, 36%, 0.14);
+  --hero-blob-3: hsla(350, 80%, 65%, 0.12);
+}
